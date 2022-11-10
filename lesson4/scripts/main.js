@@ -32,14 +32,12 @@ while (x < 20) {
 
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 
+let ul = document.createElement("ul");
+document.body.append(ul);
 for (const listOfItem of listOfItems) {
-    document.write(`
-                    <ul>
-                        <li>
-                        ${listOfItem}
-                        </li>
-                    </ul>
-`)
+    let li = document.createElement("li");
+    li.innerHTML = `${listOfItem}`;
+    ul.appendChild(li);
 }
 
 // Використовуючи данні з масиву, за допомоги document.write та циклу
@@ -74,7 +72,7 @@ for (const product of products) {
         `
         <div>
         <h3 class="product-title">${product.title} - ${product.price}</h3>
-        <img src="${product.image}" alt="" class="product-image">
+        <img src="${product.image}" class="product-image">
 </div>
         `
     )
@@ -102,18 +100,22 @@ let users = [
 
 for (const user of users) {
     if (user.status) {
-        console.log(user.name, user.status);
+        console.log(user);
     }
 }
+
+console.log('')
 
 for (const user of users) {
     if (!user.status) {
-        console.log(user.name, user.status)
+        console.log(user)
     }
 }
 
+console.log('')
+
 for (const user of users) {
     if (user.age > 30) {
-        console.log(user.name, user.age)
+        console.log(user)
     }
 }
