@@ -1,0 +1,10 @@
+.father{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-card{
+    height: 200px;
+    width: 250px;
+}

@@ -1,0 +1,10 @@
+.father{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.users-box{
+    float: left;
+    width: 50%;
+}

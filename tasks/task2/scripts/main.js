@@ -40,55 +40,67 @@ let numArray = [2,17,13,6,22,31,45,66,100,-18];
 let i = 0
 while(i < numArray.length) {
     let number = numArray[i];
-    console.log(number)
+    // console.log(number)
     i++
 }
 
-console.log('-')
-//
 for (const number of numArray) {
-    console.log(number)
+    // console.log(number)
 }
-//
-console.log('-')
 
-let x = 0
+let x = 0;
+let v = 0;
+let parArr = [];
 while(x < numArray.length) {
     let number = numArray[x];
     if (number % 2 === 0) {
-        console.log(number);
+        parArr[v] = numArray[x];
+        v++
     }
     x++
 }
 
-console.log('-');
+console.log(parArr);
 
-let c = 0
+let c = 0;
+let b = 0
+let neparArr = [];
 while(c < numArray.length) {
     let number = numArray[c];
     if (number % 2 === 1) {
-        console.log(number);
+        neparArr[b] = numArray[c];
+        b++
     }
     c++
 }
 
-console.log('-')
+console.log(neparArr);
 
+let z = 0;
+let l = 0
+let parArr2 = [];
 for (const number of numArray) {
     if (number % 2 === 0) {
-        console.log(number);
+        parArr2[z] = numArray[l];
+        z++
     }
+    l++
 }
 
-console.log('-')
+console.log(parArr2);
 
+let o = 0;
+let p = 0
+let neparArr2 = [];
 for (const number of numArray) {
-    if (number % 2 === 1) {
-        console.log(number);
+    if (number % 2 === 0) {
+        parArr2[o] = numArray[p];
+        o++
     }
+    p++
 }
 
-console.log('-')
+console.log(neparArr);
 
 for (let i = 0; i < numArray.length; i++) {
     const numArrayElement = numArray[i];
@@ -96,118 +108,123 @@ for (let i = 0; i < numArray.length; i++) {
         numArray[i] = 'okten';
     }
 }
-console.log(numArray)
 
-console.log('-')
-
+let arr = [];
 for (let i = numArray.length - 1; i >= 0; i--) {
     const numArrayElement = numArray[i];
-    console.log(numArrayElement)
+    arr.push(numArrayElement)
 }
-
-console.log('------------');
+console.log(arr)
 
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 
 let numArray2 = [2,17,13,6,22,31,45,66,100,-18];
 
+arr3 = [];
 let j = numArray2.length;
 while (j--) {
-    console.log(numArray2[j]);
+    arr3.push(numArray2[j]);
 }
-
-console.log('-');
+console.log(arr3)
 
 for (let i = numArray2.length - 1; i >= 0; i--) {
     const numArrayElement = numArray2[i];
-    console.log(numArray2[i])
+    arr3.push(numArray2[i]);
 }
-
-console.log('-');
+console.log(arr3)
 
 let k = numArray2.length
 while(k--) {
     let number = numArray2[k];
     if (number % 2 === 1) {
-        console.log(number);
+        arr3.push(number)
     }
 }
-
-console.log('-');
+console.log(arr3);
 
 for (let i = numArray2.length - 1; i >= 0; i--) {
     const number = numArray2[i];
     if (number % 2 === 1) {
-        console.log(number);
+        arr3.push(number)
     }
 }
 
-console.log('-');
+console.log(arr3)
 
 let f = numArray2.length
 while(f--) {
     let number = numArray2[f];
     if (number % 2 === 0) {
-        console.log(number);
+        arr3.push(number);
     }
 }
-
-console.log('-');
+console.log(arr3)
 
 for (let i = numArray2.length - 1; i >= 0; i--) {
     const number = numArray2[i];
     if (number % 2 === 0) {
-        console.log(number);
+        arr3.push(number);
     }
 }
-
-console.log('-');
+console.log(arr3)
 
 for (let i = numArray2.length - 1; i >= 0; i--) {
     const numArray2Element = numArray2[i];
     if (numArray2Element % 3 === 0) {
         numArray2[i] = 'okten';
     }
-    console.log(numArray2[i])
+    arr3.push(numArray2[i])
 }
 
-console.log('')
+console.log(arr3)
 
 let numbers = [12, 68, 124, 1, 85, 60, 77, 11, 25, 33];
 let stings = ['yogurt', 'work', 'jem', 'back', 'green pay', 'frozen', 'simple', 'electronic', 'flame'];
 let someArray = [true, false, 'apple', 'december', 15, NaN, null, -17, 0];
 let Arrayka = [true, false, 'apple', 'december', 15, true, true, -17, 0];
 
+arrn = [];
+arrs = [];
+arrsa = [];
+arrarr = [];
+arrarr2 = [];
+arrarr3 = [];
+
 for (const number of numbers) {
-    console.log(number);
+    arr3.push(number)
 }
+console.log(arr3)
 
 for (const sting of stings) {
-    console.log(sting);
+    arrs.push(sting)
 }
+console.log(arrs);
 
 for (const someArrayElement of someArray) {
-    console.log(someArrayElement);
+    arrsa.push(someArrayElement)
 }
+console.log(arrsa)
 
 for (const arraykaElement of Arrayka) {
     if (typeof arraykaElement === "boolean") {
-        console.log(arraykaElement);
+        arrarr.push(arraykaElement)
     }
 }
+console.log(arrarr)
 
 for (const arraykaElement of Arrayka) {
     if (typeof arraykaElement === 'number') {
-        console.log(arraykaElement);
+        arrarr2.push(arraykaElement)
     }
 }
+console.log(arrarr2)
 
 for (let i = 0; i < Arrayka.length; i++) {
     const arraykaElement = Arrayka[i];
-    console.log(i);
+    arrarr3.push(i);
 }
 
-console.log('')
+console.log(arrarr3)
 
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів.
 // Вивести в консоль всі його елементи в циклі.
@@ -229,49 +246,57 @@ nullArray[7] = false;
 nullArray[8] = NaN;
 nullArray[9] = null;
 
+
+bluearr = [];
+bluearr2 = [];
+bluearr3 = [];
+bluearr4 = [];
+bluearr5 = [];
+
 for (let i = 0; i < nullArray.length; i++) {
     const nullArrayElement = nullArray[i];
-    console.log(nullArray[i]);
     document.write(i);
+    bluearr.push(nullArray[i])
 }
 
-console.log('-');
+console.log(bluearr);
 
 for (let i = 0; i < 100; i++) {
     const nullArrayElement = nullArray[i];
-    console.log(i);
     document.write(i);
+    bluearr2.push(i)
 }
 
-console.log('-');
+console.log(bluearr2);
 
 for (let i = 0; i < 100; i += 2) {
     const nullArrayElement = nullArray[i];
-    console.log(i);
     document.write(i);
+    bluearr3.push(i)
 }
 
-console.log('-');
-
+console.log(bluearr3);
 
 for (let i = 0; i < 100; i++) {
     const nullArrayElement = nullArray[i];
     if (i % 2 === 0) {
-        console.log(i);
         document.write(i);
+        bluearr4.push(i)
     }
 }
 
-console.log('-');
+console.log(bluearr4);
 
 
 for (let i = 0; i < 100; i++) {
     const nullArrayElement = nullArray[i];
     if (i % 2 === 1) {
-        console.log(i);
         document.write(i);
+        bluearr5.push(i)
     }
 }
+
+console.log(bluearr5);
 
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 // -знайти наібльшу книжку.
