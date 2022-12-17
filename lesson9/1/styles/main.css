@@ -1,0 +1,15 @@
+.title {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.father {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.mother {
+    margin-left: 50px;
+}

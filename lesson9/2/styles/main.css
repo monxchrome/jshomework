@@ -1,0 +1,72 @@
+.title-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.father {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrap {
+    background: silver;
+    color: aquamarine;
+    font-size: x-large;
+    width: 20px;
+    height: 20px;
+}
+
+.magic {
+    width: 300px;
+    height: 300px;
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.b2 {
+    margin: 10px;
+    width: 100px;
+    height: 20px;
+}
+
+.wave {
+    margin: 30px;
+}
+
+.f_div{
+    display: block;
+}
+
+.mother_r {
+    display: flex;
+}
+
+.mother_y {
+    display: flex;
+    width: 835px;
+}
+
+.border1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: aquamarine;
+    background: aqua;
+    border-width: 10px;
+    margin: 5px;
+}
+
+.border2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: mediumpurple;
+    background: blueviolet;
+    border-width: 10px;
+    margin: 5px;
+}
